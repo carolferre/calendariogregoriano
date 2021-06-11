@@ -1,0 +1,16 @@
+
+año = int(input("Introduzca un año:"))
+#
+# Coloca tu código aquí.
+#
+if año<1580:
+    print("No dentro del período del calendario gregoriano")
+    exit()
+if año%4!=0:
+    print("ES UN AÑO COMÚN")
+elif año%100!=0:
+    print("ES UN AÑO BISIESTO")
+elif año%400!=0:
+    print("ES UN AÑO COMÚN")
+else:
+    print("ES UN AÑO BISIESTO")
